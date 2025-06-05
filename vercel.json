@@ -1,0 +1,27 @@
+{
+  "name": "habit-nexus",
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key"
+  },
+  "functions": {
+    "app/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/mobile",
+      "destination": "/mobile"
+    },
+    {
+      "source": "/dashboard", 
+      "destination": "/dashboard"
+    }
+  ]
+}
