@@ -1,18 +1,3 @@
 {
-  "name": "habit-nexus",
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "rewrites": [
-    {
-      "source": "/mobile",
-      "destination": "/mobile"
-    },
-    {
-      "source": "/dashboard", 
-      "destination": "/dashboard"
-    }
-  ]
+  "buildCommand": "npm run build"
 }
