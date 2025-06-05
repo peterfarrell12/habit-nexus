@@ -68,4 +68,4 @@ CREATE POLICY "Users can delete logs for their habits" ON habit_logs
       WHERE habits.id = habit_logs.habit_id 
       AND habits.user_id = auth.uid()
     )
-  );
+  );xabzec-4ganNu-qavcof
